@@ -1,0 +1,20 @@
+For instance lets take the example where the array is [ 3 , 1 , 4 , 1, 5] and k = 2.
+
+After creating the hashmap, we shall have the following map of < Element , Count >
+
+< 3 , 1 >
+< 1 , 2 >
+< 4 , 1 >
+< 5 , 1 >
+
+Now we iterate through our mapset, and subtract k from it and check if the map still contains any key with this value.
+If so we increase our count. 
+
+3 - k = 1, and our map contains 1 key so we increment count. Value of count is now 1.
+1 - k = -1 and our map does not contain -1 so we continue.
+4 - k = 2 and our map does not contain 2 so we continue;
+5 - k = 3 and our map contains the key "3" so we increment count. Value of count is now 2.
+As we have traversed the entire map, we can now exit the for loop.
+
+
+At the end we finally return count(2).
