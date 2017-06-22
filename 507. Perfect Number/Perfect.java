@@ -1,6 +1,6 @@
 // The logic is to simply let i iterate from 1 to the square root of the number and check if that number mode i is equals to 0. If so , we check
-if the divisors are different. If so add both to the result else add only single to the resultant array. At the end compute sum of all
-elements in the array. If this equals n, the return true else return false.
+if the divisors are different. If so add both to the set else add only single to the set. At the end compute sum of all
+elements in the set. If this equals n, the return true else return false.
 
 public class Solution {
     public boolean checkPerfectNumber(int num) {
@@ -8,7 +8,7 @@ public class Solution {
         Set < Integer > ans = new HashSet < Integer> ();
         if( num == 1)
             return false;
-        for (int i=1; i<=Math.sqrt(n)+1; i++)
+        for (int i=1; i<= Math.sqrt(n) ; i++)
         {
             if (n%i==0)
             {
