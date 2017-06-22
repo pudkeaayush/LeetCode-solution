@@ -1,0 +1,5 @@
+For instance let us take the example of the string "abcabcabcabc". 
+Here the length of string is 12. We start iterating from index 6 to 1.
+As 12 % 6 == 0 and we take the substring from index 0 to 6( exclusive). 
+Also 12 / 6 = 2 and we repeat the substring "abcabc" from index 0 to 6 two times. As this new string
+is equal to the original string we return true.
