@@ -1,0 +1,19 @@
+Let us take an example. Suppose the array is [ 2 , 6 , 4, 8, 10, 9, 15].
+After sorting the array is [ 2 , 4, 6, 8 , 9 , 10, 15].
+We set start = 0 and end = nums.length - 1;
+As we see the first element in both the sorted array and original array are same ( i.e 2) we increment the start to 1. 
+Similarly as the last element in both the sorted array and the original array are same( i.e 15) we decrement the end to ( end - 1).
+Next we see that the start element of original array and new sorted array are not same( i.e 6 and 4 respectively).
+Also we see that the end element of original array and new sorted array are not same( i.e 9 and 10 respectively).
+
+Hence we return ( end - start + 1) which is equal to ( 5 - 1 + 1) or 5.
+
+The complexity of the algorithm is O(nlogn) as sorting takes O(nlogn) time.
+
+Can we do better than this?
+The O(N) solution is as follows:
+1. Find the smallest number from left that is lesser than the previous element i.e 4 in our previous array. Call this element as min.
+2. Find the largest number from right that is greater than the next element i.e 10 in our previous array. Call this element as max.
+3. Find the first number from left that is greater than min in original array. In our case this is index 1( element 6). Call this l.
+4. Find the first number from right that is less than the max element in original array. In our case this index is 5( element 9). Call this r.
+5. Return l - r + 1
