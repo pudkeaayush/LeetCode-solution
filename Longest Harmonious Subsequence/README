@@ -1,0 +1,21 @@
+For instance lets take the example where the array is [ 1, 3 , 2, 2 , 5 , 2 , 3 ,7]
+
+After creating the hashmap, we shall have the following map of < Element , Count >
+
+< 1 , 1 >
+< 3 , 2 >
+< 2 , 3 >
+< 5 , 1 >
+< 7 , 1 > 
+
+Now we iterate through our mapset, and try to find the values whose difference of key is 1. If so we find the maximum of these counts
+and return. Initialize max = 0;
+
+Let us iterate through our map.
+As our map contains the key 1 but does not contain the key 2, we continue.
+As our map contains the key 3 but does not contain the key 4 , we continue.
+As our map contains the key 2 and the key 3 , our max would be Math.max( map.get(2) + map.get(3) , max ) which is equal to 5.
+As our map contains the key 5 but does not contain the key 6 , we continue.
+As our map contains the key 7 but does not contain the key 8 , we continue.
+
+Return max(5) as the answer.
