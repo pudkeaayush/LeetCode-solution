@@ -1,0 +1,10 @@
+As given in the question, 28 = 1 + 2 + 4 + 7 + 14.
+
+Hence we start iterating from 1 to Math.sqrt(28) i.e 5.
+Now , 28 % 1 == 0 and 28 / 1 = 28. As 28 is equal to the num itself, we add just 1 to an arraylist.
+Next, 28 % 2 == 0 and 28 / 2 = 14. As both 2 and 14 are different from num, add both to the arraylist.
+As 28 % 3 != 0 we continue.
+As 28 % 4 == 0 and 28 / 4 = 7, we add both 4 and 7 to the arraylist as both are different.
+Next, 28 % 5 != 0 so we continue.
+
+Thus our resultant array contains, 1 , 2 , 14 , 4 and 7. As the sum of all these equals 28 we return true.
