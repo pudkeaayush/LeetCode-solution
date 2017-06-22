@@ -1,6 +1,6 @@
-// The logic is to simply let i iterate from 1 to the square root of the number and check if that number mode i is equals to 0. If so , we check
-if the divisors are different. If so add both to the set else add only single to the set. At the end compute sum of all
-elements in the set. If this equals n, the return true else return false.
+/* The logic is to simply let i iterate from 1 to the square root of the number and check if that number mode i is equals to 0. If so , 
+we check if the divisors are different. If so add both to the set else add only single to the set. At the end compute sum of all
+elements in the set. If this equals n, the return true else return false.*/
 
 public class Solution {
     public boolean checkPerfectNumber(int num) {
