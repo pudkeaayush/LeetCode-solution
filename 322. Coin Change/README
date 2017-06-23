@@ -1,20 +1,20 @@
-For instance let us take the example where the amount is 11 and the coin denominations are { 1 , 2 , 5}.
+For instance let us take the example where the amount is 6 and the coin denominations are { 1 , 2 , 5}.
 
 Let us initialize an array called dp that has a length of amount + 1 and fill all the values other than dp[0] with Integer.MAX_VALUE. 
 Thus our table looks like this :
 
-|    Index   | 0 |     1    |     2    |     3    |    4     |     5    |    6     |     7    |     8    |     9    |     10   |     11   |         
-| ---------  |---|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-|   Value    | 0 |2147483647|2147483647|2147483647|2147483647|2147483647|2147483647|2147483647|2147483647|2147483647|2147483647|2147483647
+|Index| 0 |     1    |     2    |     3    |    4     |     5    |    6     |       
+|---- |---|----------|----------|----------|----------|----------|----------|
+|Value| 0 |2147483647|2147483647|2147483647|2147483647|2147483647|2147483647|
 
-Now we iterate from 1 to 11. At each iteration we check each value of coin. If the denomination of the coin is lesser than this iterated 
+Now we iterate from 1 to 6. At each iteration we check each value of coin. If the denomination of the coin is lesser than this iterated 
 value and the difference between dp[ i - coins[j] ] != 2147483647, then we update dp[ i ] = Math.min( dp[ i ] , dp[ i - coins[j] ].
 
 Finally our table looks like this:
 
-|    Index   | 0 |     1    |     2    |     3    |    4     |     5    |    6     |     7    |     8    |     9    |     10   |     11   |         
-| ---------  |---|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|----------|
-|   Value    | 0 |     1    |     1    |     2    |   2      |     1    |    2     |     2    |    3     |    3     |     2    |     3    |
+|    Index   | 0 |  1 |  2 |  3 | 4  | 5 |  6 |         
+| ---------  |---|----|----|----|----|---|----|
+|   Value    | 0 |  1 |  1 |  2 | 2  | 1 |  2 |  
 
 Finally we return the value at the last index in our table.
 
