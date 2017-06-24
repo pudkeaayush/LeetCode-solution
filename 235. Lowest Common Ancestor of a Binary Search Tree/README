@@ -18,3 +18,6 @@ else if( root.val > p.val && root.val > q.val)
     root = root.left;
     
 Thus our answer is 4.
+
+We could have instead used the recursive approach and called the function with root.left and root.right element respectively in the if
+and else if condition as given above.
