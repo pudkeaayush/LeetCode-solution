@@ -1,0 +1,19 @@
+Let us better understand from the below example :
+
+         ______3______
+       /              \
+    ___5__          ___1__
+   /      \        /      \
+   6      _2       0       8
+         /  \
+         7   4
+      
+Say we wamt to find the LCA of 6 and 4. 
+As our root element( 3 is different from both p = 6 and q = 4) we recursively call the function with the root.left.
+In our case the left is 5. Again we call the function lowestCommonAncestor with root.left. In our case this is 6.
+As our p value is equal to this value, we return root of this root.left i.e 5.
+
+Then we call lowestCommonAncestor function with root.right i.e 2. Now we call the function recursively for element 7. We return null
+from the left and right of both 7's children. Then we call the right of 2 and return null from left and right of both children of 4.
+
+At this time as the left and right of the root are not same i.e 6 and 2 respectively, we return 5.
