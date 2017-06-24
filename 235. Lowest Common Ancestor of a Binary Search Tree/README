@@ -1,0 +1,20 @@
+Let us take and example of the below tree :
+
+         _____6______
+       /              \
+    ___2__          ___8__
+   /      \        /      \
+   0      _4       7       9
+         /  \
+         3   5
+       
+Let us say we want to find the LCA of 5 and 3. As the root value is greater than both 5 and 3 , we make root as root.left.
+Now the root value is 2. As the values 5 an 3 are both greater than 2, we make root as the right child of 2 i.e 4. Now as 5 and 3 
+do not satisfy the below if conditions, we go to the else condition and return root i.e 4.
+
+if ( root.val < p.val && root.val < q.val)
+    root = root.right;
+else if( root.val > p.val && root.val > q.val)
+    root = root.left;
+    
+Thus our answer is 4.
