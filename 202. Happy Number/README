@@ -1,0 +1,22 @@
+Let us take for instance an example of the 19.
+Initially we add 82 which is the sum of square of 1 and 9 to the set.
+Next we add 68 which is the sum of square of 6 and 8 to the set.
+Next we add 100 which is the sum of square of 6 and 8 to the set.
+Next we add 1 which is the square of 1 , 0 and 0 to the set.
+As n == 1, we return true.
+
+Take for instance an example of 5. We add the following numbers to the set.
+25 ( Square of 5 )
+29( Square of 2 + Square of 5)
+85( Square of 2 + Square of 9)
+89( Square of 8 + Square of 5)
+145( Square of 8 + Square of 9)
+42( Square of 1 + Square of 4 + Square of 5)
+20( Square of 4 + Square of 2)
+4( Square of 2 + Square of 0)
+16( Square of 4 )
+37( Square of 1 + Square of 6)
+58( Square of 3 + Square of 7)
+89( Square of 5 + Square of 8)
+
+As our set already contains 89, we will end in a loop and thus return false.
