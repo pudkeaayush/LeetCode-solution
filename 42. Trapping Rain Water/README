@@ -1,0 +1,32 @@
+There are two different approaches for this problem. Let us understand with the array given below :
+[0,1,0,2,1,0,1,3,2,1,2,1]
+
+For the first approach we maintain two different lists called left and right, where we store the greatest element to the left or right of the
+current index.
+Thus our left array for the above array would be : [-1,0,1,1,2,2,2,2,3,3,3,3]
+Similarly our right array for the given array would be : [3,3,3,3,3,3,3,2,2,2,1,-1].
+
+Note that the left of index 0 is set to -1. Similarly, the right of last index is set to -1.
+
+Now we iterate through both these arrays and check if either of them are not -1. In that case we take the lesser of left and right index and
+if it is not 0, we subtract the height of current tower from this. If it is not 0 , we add to our ans. Thus our new array containing the difference would be :
+[ 0 , 0 , 1 , 0 , 1 , 2 , 1 , 0 , 0 , 1 , 0 , 0].
+When we add all we get the answer as 6.
+
+As we can see, we had to maintain two additional arrays , left and right. Also we had to iterate the array thrice and thus our time and
+space complexity, although still O(n) required more passes.
+
+Can we do better than this?
+Turns out we can do it in O(n) with single pass and without using any additional space complexity.
+
+The algorithm for this is as follows for the array : [0,1,0,2,1,0,1,3,2,1,2,1]
+1. Find the left most element in the array whose next element is smaller than it i.e index 1 with value 1 in our case.
+2. Find the right most element in the array whose next element is smaller than it i.e index 10 with value 2 in our case.
+3. If left value is less than the right value( true for our case as 1 < 2), we keep on adding the difference between this value and 
+the successive elements till we encounter a tower that is taller than this.( 1 - 0 at index 2 i.e ans = 1).
+4. Again compare the next left most element i.e 2 at index 3 with 2 at index 10. As it is <= this value, we keep on adding the difference
+between 2 and the successive smaller elements (i.e (2 - 1) , (2 - 0) , ( 2 - 1 ) to our ans. Thus our ans becomes 1 + 1 + 2 + 1).
+5. Now as the left most element 3 is greater than the right most element, we move this right index and subtract 2 - 1 to the ans. Thus our
+ans becomes 6 at this point.
+6. We keep moving the right pointer till it reaches the index 7 at which point the left index is no longer smaller than the right index 
+and hence we return 6 as our ans.
