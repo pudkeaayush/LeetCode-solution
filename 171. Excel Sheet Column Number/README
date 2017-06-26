@@ -1,0 +1,9 @@
+Let us take the example of the string AAB.
+
+As per our initial initialization, A would be mapped to 1, B to 2 , C to 3...Z to 26.
+We start iterating from the end of the string. The character corresponding to B is 2. 
+Count is initialized to 1. Thus we add 1 * 2 which is the value of B to the answer. Count is now multiplied by 26.
+Then we add count * value of 'A' i.e 26 * 1 to the answer. Thus our answer till now becomes 28.
+Next we increment count to 26 * 26. We multiply this count with the value of A at index 0 i.e 1 and add it to the answer.
+Thus we add( 26 * 26 * 1) to the answer. Hence our answer at the end becomes ( 676 + 28 == 704 ).
+We return 704.
