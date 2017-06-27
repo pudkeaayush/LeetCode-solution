@@ -1,0 +1,9 @@
+Let us take the example of : 1->2->3->4->5->NULL.
+
+Here head = 1 , odd = 1 , even = 2 and evenhead = 2.
+Now odd.next will point to 3.
+Similarly even.next will point to 4.
+In this time , the odd is set to 3. We now make the next of 3 point to 5.
+Also even.next now points to NULL. We thus link the next of odd( i.e 5 ) to head of even nodes i.e 2.
+
+Thus at the end we return the ans : 1->3->5->2->4->NULL
