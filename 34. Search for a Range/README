@@ -1,0 +1,7 @@
+Let us take the example of this array : [5, 7, 7, 8, 8, 10] and target value 8.
+
+Initially we compare the middle element 7 with the target element. As the target element is higher we set, start as mid + 1. Now our array under
+consideration is restricted to the range [ 8 , 8 , 10]. 
+Now our mid element is 8. As this is equal to our target we compare the start and end elements to the target. As the end element is not equal
+to the target but the start element is equal to the target, we decrement the end position.
+Now both our start and element equal to the target element and thus we return the index of these array as the element is found.
