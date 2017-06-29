@@ -1,0 +1,19 @@
+Let us take the example of the the tree shown in the example.
+
+          1
+         / \
+        3   2
+       / \   \  
+      5   3   9 
+Here we first add the root element 1 to the queue. Currently the size of the queue is 1.
+Next we iterate till the queue is not empty. Start by removing the first element from the queue.
+As the left of the current element is not null, we add 3 to the queue. Similarly, 2 is added to the queue. The max value of this level is 1
+which is added to our final answer array.
+Next , the size of the queue is 2. We find out the left and right of 3 and add it to the queue in that order ( i.e 5 followed by 3).
+The max is 3 now for this level. As the other element of 2 has a right child we add it to the queue. Also as it is not greater than 3,
+we find the maximum element of this level to be 3 and thus we add 3 to our final answer.
+For the final level, our size of queue is 3. As none of the elements have any child nothing is added to queue. We just need to find the
+maximum element of this level which happens to be 9. Add this element to the final answer and return .
+
+Time Complexity : O(n)
+Space Complexity : O(1)
