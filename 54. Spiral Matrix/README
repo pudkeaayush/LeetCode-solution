@@ -1,0 +1,20 @@
+Here we can adopt two different approaches. One of the approach is using extra memory of n * m size. In this case we allocated a new
+matrix of size n * m and put elements in spiral format starting from left to right, top to bottom , right to left and bottom to up.
+We make use of a visited matrix array to know till what point we need to go. 
+A better method would be to use 4 different variables, rowStart , rowEnd , colStart and colEnd. Each time we have traversed a row from
+left to right , increment the rowStart counter. Each time we traverse a column from top to bottom, we decrement the colEnd counter.
+Each time we traverse a row from right to left, we decrement the rowEnd counter and each time we traverse from bottom to top, we increment
+the colStart counter.
+
+Let us understand with a simple example.
+OUr matrix = [
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+Suppose our matrix is given as above. The rowStart would be 0, rowEnd would be 2, colStart would be 0 and colEnd would be 2.
+Now we move from left to right in the rowStart row. Thus we add 1 , 2 and 3 to the array. Now we increment the rowStart counter by 1.
+We now iterate from rowStart till rowEnd and add 6 and 9 i.e the colEnd elements. Now we decrement the colEnd counter by 1. 
+In the next step we go from right to left and add elements 8 and 7 to the matrix. After we reach 7, we increment the colStart by 1. Now we 
+move from rowEnd to rowStart ( i.e bottom to top) and add 7 and 4. 
+In the final step we add 5 and now because all other nodes have been traversed we exit.
