@@ -1,0 +1,17 @@
+The main idea here is to find the indegrees of all the nodes. We add all the nodes that have 0 indegree to a queue. Then we start removing
+an element at a time from the queue and if it has any outgoing edges, we decrement the indegree count of that node. If at any point any 
+node has 0 indegrees, that means that all of it's edges have been explored and it can be added to the queue. If at the end we have added 
+numCourses to the queue, then it means all can be completed else not.
+
+Let us understand with an example:
+Suppose numCourses = 4 and the dependencies are as follows:
+[[1,0],[2,1],[3,2],[1,3]]
+
+In this case the indegrees of all the nodes are as follows:
+[0 , 2 , 1 , 1] where the indegree of node 0 is 0, node 1 is 2 , node 2 is 1 and node 3 is 1.
+
+As node 0 is the only node with indegree 0, we add it to the queue.
+Now we increment the count of "count" everytime we remove an element from the queue. Next we decrement the nodes having dependency to this 
+removed element. As only node 1 has a dependency to node 0, we decrement the count of node 1 from 2 to 1.
+At this point we check if any other nodes have indegree count as 0. As none of them have our queue is empty and thus we exit from the loop
+and return false.
