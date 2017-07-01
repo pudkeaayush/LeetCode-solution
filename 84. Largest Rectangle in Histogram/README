@@ -1,0 +1,25 @@
+The idea is to treat every bar as the smallest bar in the rectangle and find the maximum of this. For this case we need to find the 
+left most bar and right most bar which are smaller than this bar and then find the area of the rectangle.
+
+We wil use a stack here. Let us demonstrate with this array: [2,1,5,6,2,3].
+If the stack is empty we push the index of the element to the stack. We keep pushing an element in the stack till it is greater than the
+element at the top of the stack.
+Initially , we start with the element 2. As the stack is empty, we push the index 0 to the stack.
+Next, as element 1 at position 1 is less than the element at top of stack, we pop from stack. As the stack is empty, we calcuate the 
+area to be 
+area = Math.max( area , popped element * i ) = 2 * 1 = 2;
+Now we push the element 1 to the stack.
+Next, the element 5 is bigger than 1 in the stack, so we push 5 into the stack.
+Also element 6 is greater so we push the element 6 to the stack.
+Now, our element 2 is smaller than 6. So we keep popping elements from stack and calcuate the area each time we remove.
+area = Math.max(area , popped element * ( i - index at top of the stack now - 1)
+Thus our area turns out to be 6 * ( 4 - 2 - 1 ) = 6.
+Next, we pop 5 from the stack as it is greater than 2. Thus our area turns to be 5 * ( 4 - 1 - 1) = 10
+Next as 2 is greater than 1, we add 2 to the stack. Again as 3 is greater than 2, it is added to stack.
+
+Now that we have traversed all the elements, we remove elements from the stack and apply the formula of whether the stack is empty or not.
+For element 3 , our area becomes = 3 * ( 6 - 4 - 1 ) = 3
+For element 2, our area becomes = 2 * ( 5 - 1 - 1 ) = 6
+Similarly for 1, our area becomes = 1 * ( 2 ) = 2 as our stack is empty.
+
+Thus we return 10 as the answer
