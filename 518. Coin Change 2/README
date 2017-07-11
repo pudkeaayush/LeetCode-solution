@@ -1,0 +1,16 @@
+For instance , let us take the example of coins { 1 ,5, 10 , 25} and sum as 10.
+The main idea in this code is that the different ways of getting an amount is either by taking that coin or by ignoring that coin.
+We iterate through all the coins and for each coin, calculate the ways in which that coin can contribute to the amount.
+
+Start off by taking coin 1 into consideration. We calculate the dp values of all amount from 1 to amount. 
+dp[0] = 1 as there is 1 way of selecting a sum of 0 i.e by ignoring all values.
+dp[1] = dp[ 1 ] + dp[ 0 ] = 1
+dp[2] = dp[2] + dp[1] = 1 and so on.
+
+Below we can see the dp values from 0 to 10 for each coin:
+Coin 1: 1 1 1 1 1 1 1 1 1 1 1 
+Coin 5 : 1 1 1 1 1 2 2 2 2 2 3 
+Coin 10 : 1 1 1 1 1 2 2 2 2 2 4 
+Coin 25 : 1 1 1 1 1 2 2 2 2 2 4 
+
+Thus we return 4 at the end as the answer.
