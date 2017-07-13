@@ -1,0 +1,4 @@
+The simple idea here is that the trailing zeros are contributed by the multiplication of 10( factors 2 and 5).
+For any number, the number of factors of 2 are more than 5, hence we just need to count the no. of 5s in the factorial.
+We need to be wary of numbers like 25 , 125 etc which have 2 or 3 5s respectively. Hence just keep counting the no. of 5s 
+by dividing the no. by 5, then 25 and so on.
