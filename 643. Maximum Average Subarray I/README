@@ -1,0 +1,5 @@
+The simple logic here is to maintain a simple sliding window of 7 characters at a time and then move it by 1 till the end.
+Thus for instance consider 
+Input: [1,12,-5,-6,50,3], k = 4
+Here, first we add the first 4 nos. Then we subtract the first no from the running sum and add the 5th number. We check if this average is more.
+Similarly we repeat for other elements.
