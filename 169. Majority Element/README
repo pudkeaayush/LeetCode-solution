@@ -1,0 +1,18 @@
+There can be a naive brute force solution for this. However, a better solution is to use Moore's Voting algorithm. This algorithm works in O(n)
+time and involves O(1) space.
+Lets say the array under consideration is :
+1,2,5,9,5,9,5,5,5
+
+There are two steps involved in this algorithm :
+1. Generate Candidate
+2. Check if the candidate is majority element
+
+1. Generate candidate : First we consider the 1st element 1 as the candidate and make count as 1. Everytime we encounter this candidate
+element we increment the count by 1 and if we encounter a different element, we decrement the count by 1. Anytime the value of count becomes 
+0, we set the current element as the candidate.
+Thus in our first step 1 is the candidate and count is 1. Next, as 2 is different to 1 we decrement count and set it to 0. At this point
+we set 2 as the candidate. Next, we encounter 5 which is different from 2 and thus set count to 0. Going so on and so forth, we get 5 as the
+candidate element at the end of the array.
+
+Next we iterate through the array again and count the occurences of 5. If this is more than or equal to (length of array / 2), we return this
+as the majority element else we return -1 saying we cannot find any element as the majority element.
