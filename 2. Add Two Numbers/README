@@ -1,0 +1,3 @@
+The basic idea in this question is to iterate through the two linkedlists and add each node value to the previous carry. We run this while 
+loop till both the lists are null. At the end , we check if carry is not 0 in which case we need to add the carry as a new node at the end of
+the list.
