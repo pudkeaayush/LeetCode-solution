@@ -1,0 +1,3 @@
+The simple logic here is to use a HashMap. Everytime, we traverse a number in the array, we check if ( target - current element) exists
+in the hashmap. If it does, we return the current index and  the index corresponding to (target - current element) in the hashmap. Else, we 
+continue till the end. If we do not find any such element at the end, we return {-1,-1} to denote that we could not find any such values.
