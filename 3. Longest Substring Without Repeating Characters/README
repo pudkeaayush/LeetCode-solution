@@ -1,0 +1,9 @@
+Here, we use the concept of sliding window.
+For instance lets suppose the string is "dvdf".
+In the beginning, we set the value of i = 0 and index = 0. Now we iterate till both i and index are less than the length of the string.
+As the first character d is not in the set, we add d to the hashset and increment the value of index.
+Similarly, v is not in the hashset so we add v to the hashset. At this point, we increment the value of index.
+Now when index = 2, we find the character at this index 'd' is already in the set. So we remove 'd' from the set and increment the value of i.
+Now the value of i is 1.
+Next we add d to the set as it is not present in the set. Similarly f is added to the set and we get the difference between index and i at this
+position to get the distance of 3( vdf ). Now as index is greater than the length of the string, we exit.
