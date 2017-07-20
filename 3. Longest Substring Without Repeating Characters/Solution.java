@@ -14,7 +14,7 @@ public class Solution {
                 set.remove(s.charAt(i));
                 i++;
             }
-        }
+         }
         
         return result != Integer.MIN_VALUE ? result : 0;
     }
