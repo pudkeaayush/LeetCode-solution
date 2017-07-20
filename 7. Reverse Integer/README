@@ -1,0 +1,7 @@
+Lets take an example of -123.
+
+We start off by taking ans as 0;
+Initially we take -123 % 10 which gives us -3. ans * 10 + (-3) gives us -3. We divide -123 by 10 to get -12.
+Then we take -12 % 3 which is -2. -3 * 10 gives us -30 into which if we add -2, we get -32. We divide -12 by 10 to get -1.
+Next, we take -1%10 which is -1. When we multiply -32 by 10 we get -320. When we add -1, we get -321. Now we divide -1 by 10 to get 0.
+Thus we return -321 as our answer.
