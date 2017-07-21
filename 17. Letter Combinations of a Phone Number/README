@@ -1,0 +1,2 @@
+The idea here is to recursively add all the possible string characters to a stringbuilder . Everytime the stringBuilder's length is equal to the 
+length of the digits given, we add it to the final list.
