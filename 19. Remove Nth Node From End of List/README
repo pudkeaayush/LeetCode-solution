@@ -1,0 +1,3 @@
+The logic here is to simply maintain two pointers , slow and fast and maintain a distance of n between fast and slow. Then when we move fast
+and slow pointers, when fast.next points to null, the next of slow points to the node to be deleted. Hence , we maintain slow.next as slow.next.next.
+We also need to create a dummy node here so that we can start slow and fast at that point.
