@@ -1,0 +1,3 @@
+Here we need an auxiliary data structure called stack. Every time we encounter an opening parenthesis, we push into the stack else we pop and
+compare for equality. At the end, we check if the stack size is empty or not. This is required because balanced parentheses are always even in 
+length and never odd.
