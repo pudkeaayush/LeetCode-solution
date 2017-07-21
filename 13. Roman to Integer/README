@@ -1,0 +1,23 @@
+The idea here is pretty simple. Keep a mapping from each roman letter to its value.
+
+ map.put('I',1);
+ map.put('V' , 5);
+ map.put('X', 10);
+ map.put('L' , 50);
+ map.put('C', 100);
+ map.put('D' , 500);
+ map.put('M' , 1000);
+ 
+ Thus our mapping will look something like above. Next we iterate through each character in the string. Everytime the character is lesser
+ than the next character we subtract the value of that character from the sum else add to sum. At the end we need to add the value of the last
+ character in the string.
+ 
+ For instance take the example : DCXXI.
+ 
+ The value of D is greater than C. Thus our sum becomes 500.
+ C is greater than X. Thus sum becomes 500 + 100 = 600.
+ Next, X is equal to next X. Thus we add 10 to sum i.e 610.
+ Again as X is greater than I , we add 10 and sum becomes 620.
+ At the end we add the value of the last character i.e I to sum and sum becomes 621.
+ 
+ We return 621 as our answer.
