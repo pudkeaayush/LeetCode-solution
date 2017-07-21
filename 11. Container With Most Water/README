@@ -1,0 +1,7 @@
+Let us try to understand through this example : [2,3,4,5,18,17,6].
+We maintain two pointers left and right, left points to element 2 at index 0 and right points to element 6 at the last distance. We compute
+area as Math.min( 2 , 6 ) * ( distance between 6 and 2 i.e 6) = 12. Next we find that the element is 3 and compute the area as 
+Math.min(3 , 6) * 5 = 15. Thus our maximum area now becomes 15. Again we see that 4 is less than 6 and the area is ( 4 * 4 or 16). Thus
+the max area is now 16. Next, 5 is smaller than 6, so in this case, we take area as 5 * 3 = 15. Next ,we find 18 is greater than 6 so we take
+6 * 2 = 12 as the area formed. Our max area is still 16. Finally, we see 17 is less than 18. In this case, we calculate the area to be 17 * 1.
+Thus our max area is now 17. At this point right is no longer greater than left and thus we come out of the loop and return 17 as the answer.
