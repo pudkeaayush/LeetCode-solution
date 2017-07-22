@@ -1,0 +1,2 @@
+The simple idea here is to iterate through both the lists and find the smaller one and add it to the end. We can use both iterative or
+recursive approach for this.
