@@ -1,0 +1,2 @@
+The idea here is a simple brute force approach. In this case, we need to iterate from 0 to haystack.length() - needle.length() + 1 and check
+if the value of the string so far is same as needle. If so we return true else we go on iterating and return -1 at the end.
