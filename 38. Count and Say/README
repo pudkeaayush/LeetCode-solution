@@ -1,2 +1,2 @@
-We start with the string "21" for n = 2. For n = 1, we directly return "1". For i = 2 to n, we keep getting the string at each i,
-and update our string. For instance for n = 4, we get "21" for n = 2. For n = 3, we get "1211". For n = 4 we get "111221". 
+We start with the string "21" for n = 3. For n = 1, we directly return "1". For i = 2 to n, we keep getting the string at each i,
+and update our string. For instance for n = 4, we get "21" for n = 3. For n = 3, we get "21". For n = 4 we get "1211". 
