@@ -1,0 +1,17 @@
+The idea here is to use the Kadane algorithm to solve it in O(N) time.
+We keep two variables, max_ending_here and max_so_far.
+max_ending_here is set to 0, if the max_ending_here is less than 0. Else it adds the positive values.
+
+Let us take an example of the array : [-2,1,-3,4,-1,2,1,-5,4]
+Initially max_ending_here is set to 0 and max_so_far is set to Integer.MIN_VALUE.
+
+At each iteration of the array, we check if the sum of max_ending_here + nums[i] is greater than the max_so_far. If so we udpate max_so_far.
+Also if max_ending_here is less than 0, we set it to 0.
+
+Thus our values look like this :
+
+Array Values    : -2  1 -3  4 -1  2 1 -5  4
+max_ending_here :  0  1  0  4  3  5 6  1  5
+max_so_far      : -2  1  1  4  4  5 6  6  6
+
+At the end, we return max_so_far.
