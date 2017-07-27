@@ -1,3 +1,3 @@
-The main catch here is that , to reach the current stair, we can either reach to the (n - 1) staircase and take a step size of 1 or
-reach ( n - 2 ) and take a step size of 2. This gives us our dp solution.
+The main catch here is that , to reach the current stair, we can either reach to the (n - 1) staircase and
+take a step size of 1 or reach ( n - 2 ) and take a step size of 2. This gives us our dp solution.
 dp[ i ] = dp [ i - 1 ] + dp [ i - 2].
