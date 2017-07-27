@@ -1,0 +1,10 @@
+The idea is to simply move from the last index to the beginning index and check if the end can be reached from the beginning.
+At each iteration, we check if ( i + nums[i] >= last). If so we set last to i. At the end we check to see if the last index is 0.
+
+Lets take an example : [ 2 , 0 , 0 ]
+Initially we set last to 2( i.e index of the last element).
+Now we iterate from the second last element to the first element in the array.
+At the second last index , i + nums[i] equals 1 which is not greater than or equal to last( i.e 2). Hence we do not update last.
+At the first index, i + nums[i] == 2 which is equal to the last index and thus we update last as 0.
+
+Finally as our last is 0, we return true.
