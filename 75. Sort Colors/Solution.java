@@ -16,7 +16,7 @@ public class Solution {
         int end_index = nums.length - 1;
         int i = 0;
         
-        while( i < nums.length && start_index < end_index ) {
+        while( i < nums.length ) {
             if(nums[i] == 0 && start_index < i) {
                 swap(nums , start_index , i);
                 start_index++;
