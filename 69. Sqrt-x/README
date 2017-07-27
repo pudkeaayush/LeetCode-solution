@@ -1,0 +1,3 @@
+The idea here is to use binary search from 1 to n. If mid * mid is more than the number, move left else move right.
+At any point if mid * mid equals the number, return mid. Also when you increment the left pointer , assign the return
+value as mid.
