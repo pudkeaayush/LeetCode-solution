@@ -1,0 +1,3 @@
+The idea here is to see that we can enter a particular cell from either top or left. We can find out that , for every cell, the different
+ways to enter it are equal to the summation of ways to enter the top and the ways to enter the left cell.
+Also we can see that if i == 0 or j == 0 , the solution for reaching that cell is always 1.
