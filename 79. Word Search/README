@@ -1,2 +1,0 @@
- The idea here is to do a simple recursive DFS of all the possible routes and keep a visited array. If we find the length of the recursive 
- function is equal to the word length, then we return true else return false.
