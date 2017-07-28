@@ -19,7 +19,7 @@ Next as 2 is greater than 1, we add 2 to the stack. Again as 3 is greater than 2
 
 Now that we have traversed all the elements, we remove elements from the stack and apply the formula of whether the stack is empty or not.
 For element 3 , our area becomes = 3 * ( 6 - 4 - 1 ) = 3
-For element 2, our area becomes = 2 * ( 5 - 1 - 1 ) = 6
-Similarly for 1, our area becomes = 1 * ( 2 ) = 2 as our stack is empty.
+For element 2, our area becomes = 2 * ( 6 - 1 - 1 ) = 8
+Similarly for 1, our area becomes = 1 * ( 6 ) = 6 as our stack is empty.
 
 Thus we return 10 as the answer
