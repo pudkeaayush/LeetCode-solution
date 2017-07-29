@@ -1,0 +1,2 @@
+The intuition here is to see that we need to check if the two digits are less than or equal to 26. If so , we need to set
+dp[ i ] = dp[ i + 1] + dp[ i + 2] else dp[ i ] = dp[ i + 1]. Note that we are starting from the end and go till 0.
