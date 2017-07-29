@@ -1,0 +1,13 @@
+The idea is to use BFS for traversal. At each level if the level is even, add to the end of the list and if it is even, add to the 
+beginning of the list. Thus let us take an example of the given tree:
+   3
+   / \
+  9  20
+    /  \
+   15   7
+   
+Here initally level 0 is even, so we add 3 to the end of list i.e new list is [3].
+For level 1, as the level is odd, we keep adding elements in the first position of list. Thus initally 9 is added to a new empty
+list for this level. Then 20 is added to the front of that list and thus the list becomes [20,9].
+Again for the next level, as it is an even level, we add sequentially and the list is [15,7].
+At the end we return combined list.
