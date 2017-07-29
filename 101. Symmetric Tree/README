@@ -1,2 +1,2 @@
 The idea is to check the left child of the left node with the right child of the right node and 
-the right child of left node to the left child of right node.
+the right child of left node to the left child of right node recursively.
