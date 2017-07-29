@@ -1,0 +1,1 @@
+The idea is to recursively check first if the root is a valid node of BST or not. Then check recursively for the left and right subtree.
