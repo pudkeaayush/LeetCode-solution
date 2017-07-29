@@ -1,0 +1,2 @@
+Here we are simply finding the height of the tree. So if the left child is not null, we add 1. If right is not null we add 1 to the height
+and at the end return the maximum of the left and right height.
