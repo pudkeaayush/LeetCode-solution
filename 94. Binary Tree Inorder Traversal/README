@@ -1,0 +1,5 @@
+The iterative solution here is as follows :
+Keep pushing all the left elements including the root to a stack.
+Once we have pushed all the left elements, pop the top of the stack and push it in the final list.
+Make the current root as the right child of the popped element.
+Keep doing this till the stack is not empty and the root is not null.
