@@ -1,0 +1,2 @@
+We can use a queue here and push all the elements to the queue level by level. At each level, we add all the elements
+of the queue to a new list.
