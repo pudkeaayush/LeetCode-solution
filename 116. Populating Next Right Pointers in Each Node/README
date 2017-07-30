@@ -5,7 +5,7 @@ Let us take the example of :
      / \  / \
     4  5  6  7
     
-At first we set the next of root to null. We store the left of 1 i.e 3. Now we point the left of 1 i.e 2 to the right of 1 i.e. 3.
+At first we set the next of root to null. We store the left of 1 i.e 2. Now we point the left of 1 i.e 2 to the right of 1 i.e. 3.
 For 3 we check that the next of 1 is null, thus we set it to null.
 Now our currentLevel will point to 2. We store the nextLevel as the leftChild of 2 i.e 4. We set the left of 2 to point to the right of 2.
 For the right of 2 , we check whether the next of 2 is null or not. As 2 has a next i.e 3, we set the right of 2 to point to the left of 3.
