@@ -1,3 +1,4 @@
-The idea here is to find the mid element of the sorted array and make it the root. Then set the left child of this node as array containing
-the elements from 0 to mid - 1. Similarly set the right child of the node to the array containing the elements from mid + 1 to the length
+The idea here is to find the mid element of the sorted array and make it the root. 
+Then set the left child of this node as array containing the elements from 0 to mid - 1. 
+Similarly set the right child of the node to the array containing the elements from mid + 1 to the length
 of the array. We do the steps recursively.
