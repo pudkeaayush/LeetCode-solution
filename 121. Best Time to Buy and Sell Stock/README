@@ -1,0 +1,19 @@
+The idea here is to maintain two variables, minsoFar and maxsoFar.
+At every iteration, if the value of the variable is less than the minsoFar we update minsoFar.
+After this we check if the current price - minsoFar is greater than maxsoFar. If so we update maxsoFar.
+At the end, we return maxsoFar.
+
+Let us take the example of : [7, 1, 5, 3, 6, 4].
+Initally maxsoFar = 0 and minsoFar = Integer.MAX_VALUE.
+
+After 1st iteration, 7 is smaller than minsoFar so we update minsorFar as 7.
+We check now if ( 7 - 7) is greater than the maxsoFar i.e 0. As it is not we do not update the value of maxsoFar.
+Next, we check if 1 is smaller than the minsoFar. As it is we update minsoFar as 1.
+Also as ( 1 - 1) is not greater than maxsoFar( i.e 0) we do not update maxsoFar.
+Next we see 5 is not lesser than 1 and hence we do not update minsoFar.
+As 5 - 1 is greater than the maxsoFar we update maxsoFar as 4.
+Next, we see 3 is not greater than the minsoFar i.e 1. Hence we do not update minsoFar.
+As ( 3 - 1) is not greater than maxsoFar hence we do not update maxsoFar.
+Again we see 6 is not lesser than minsoFar, so we do not update minsoFar.
+As ( 6 - 1) is greater than the maxsoFar, we update maxsoFar as 5.
+Next, we see ( 4 - 1) is not greater than 5 thus we return 5 as the answer.
