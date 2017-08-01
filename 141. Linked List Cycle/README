@@ -1,0 +1,3 @@
+The idea here is to simply use two pointers, slow and fast. Slow is incremented one step at a time
+whereas fast is incremented two steps at a time. If there is a cycle these will eventually meet at the 
+same node.
