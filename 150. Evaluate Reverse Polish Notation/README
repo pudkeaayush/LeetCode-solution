@@ -1,0 +1,6 @@
+The simple idea here is to use a stack to push a string if it is a digit , else pop the last two elements from stack
+and perform the operation. For instance let us take the example : ["2", "1", "+", "3", "*"]
+Here initially we push 2 into the stack. Then push 1 into the stack. As the next string
+is not numeric, we pop the last two elements from the stack and perform the operation on them.
+Here 2 + 1 is 3 and we push this into the stack. Next as 3 is numeric, we push it into the stack.
+Finally as * is not numeric, we pop the last two elements from the stack and return 9 as the answer.
