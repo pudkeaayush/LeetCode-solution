@@ -11,8 +11,8 @@ At the end we return max_global.
 For instance, take the array : [-2 , 3, -1 , 4 , -1]
 Step 1 : max_till_now = -2 , min_till_now = -2 , max_global - = -2
 Step 2 : max_till_now = 3 , min_till_now = -6 , max_global - = 3
-Step 3 : max_till_now = 6 , min_till_now =  -3, max_global - = 6
-Step 4 : max_till_now = 24 , min_till_now = -12 , max_global - = 24
+Step 3 : max_till_now = 6 , min_till_now =  -6, max_global - = 6
+Step 4 : max_till_now = 24 , min_till_now = -24 , max_global - = 24
 Step 5 : max_till_now = 24 , min_till_now = -24 , max_global - = 24
 
 Thus we return 24 as the answer.
