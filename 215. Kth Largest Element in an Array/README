@@ -3,6 +3,6 @@ Let us suppose the pivot element is the last element in the array.
 Then in the first iteration, we keep all the elements smaller than the pivot in the left side
 and keep a variable left which is incremented everytime the element that is smaller than the
 pivot is visited. At the end we swap the pivot in the left variable so that it comes to its
-original position in the sorted array. If this element is equal to nums.length - k + 1, then
+original position in the sorted array. If this element is equal to nums.length - k, then
 we return this element as this is the kth largest element. Else if left is greater than
-nums.length - k + 1, we traverse left else traverse right.
+nums.length - k, we traverse left else traverse right.
