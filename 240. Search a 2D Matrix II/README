@@ -1,0 +1,17 @@
+The idea here is to strat from the top right corner. If the element at this position is equal to our search element, return it.
+Else if the element to be searched is lesser than it, move to the left. Else start going down.
+
+[
+  [1,   4,  7, 11, 15],
+  [2,   5,  8, 12, 19],
+  [3,   6,  9, 16, 22],
+  [10, 13, 14, 17, 24],
+  [18, 21, 23, 26, 30]
+]
+
+Say the element to be searched is 5, we start from 15 and keep going left till we reach 4. At this point as 5
+is greater than 4, we keep moving down. Eventually, we find 5 at the next spot after we move down from 4.
+
+Say for instance the element we are searching for is 30. We keep moving down from 15 on top right till we move to 22. At this point
+we start moving left till 16. Again at this point we keep moving down till 26. At this point we keep moving right till 18.
+Now we cannot move down and thus we return false.
