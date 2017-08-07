@@ -1,0 +1,15 @@
+The simple idea here is to use Dynamic Programming. Let us understand this from the example array: [10, 9, 2, 5, 3, 7, 101].
+Initially we create an array called dp array of size equal to the length of the array and initialize it to all ones.
+This is because every element in itself gives a longest increasing subsequence of length 1.
+Next, for all the elements from index 0 to that particular index, we check the smaller elements and if so, we add 1 to the
+dp value. We maintain the max count so far as the dp value.
+For instance our dp array in the start looks like this: [1, 1, 1, 1, 1, 1, 1].
+Now at index 1 with value 9 we see that 10 is not lesser than 9 so the value remains 1 here.
+For element 2 at index 2, we see that neither 10 nor 9 are smaller than 2. Hence the value remains unchanged.
+For element 5 at index 3, we see that 10 and 9 are not smaller but 2 is smaller so the value of dp array here becomes 2.
+Next for index 4 we see that elements 10 and 9 are not smaller but 2 is smaller, so the value becomes 2 here.
+For index 5, we see that 2 at index 2, 5 at index 3 and 3 at index 4 are all smaller. Thus the value at this index 
+is the maximum of the value at all other indexes plus 1. In this case, the value turns out to be 3( 2 at index 4 + 1).
+Similarly for 101 at index 6, it turns out to be 4 as index 5 has a value of 3.
+
+Finally we return 4 as our answer.
