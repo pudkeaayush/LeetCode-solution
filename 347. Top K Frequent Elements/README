@@ -1,0 +1,17 @@
+Let us understand this problem with the example array : [1,1,1,2,2,3,4,3,3,3,4,5].
+Initially we store the count of each element in the array in a hashmap.
+Thus our hasmap contains the following data:
+1 - > 3
+3 - > 4
+5 - > 1
+4 - > 1
+2 -> 2
+
+Next as the max in our case is 4, we make an array of 0 to 4 elements and add a list to each array element.
+The idea is to use something like bucket sort. Hence, all keys having the same value will
+go into the same bucket. Thus the array at index 4 will have 3 , one at index 3 will have the value 1, 
+one at 2 will have 2, and the one at 1 will have index 4 and 5. Index 0 is empty.
+
+Next we start from the last element in the array and keep adding all the elements in the array and the elements
+in its list, till we get the first k count. Say for instance the k is 3, then we would have 3 , 1 , 2 as our list
+and return the same as our answer.
