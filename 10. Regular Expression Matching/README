@@ -1,0 +1,8 @@
+The idea here is to use dynamio programming. 
+We have to take a matrix of size (m + 1) * (n + 1) where m is the length of the string and n is the length of the pattern.
+We need to iniatialize the 0th row and 0th column as True as a null string and null pattern are considering matching. 
+Now, everytime we encounter an * in the pattern, we check what the value of the matrix
+is at position arr[ 0 ][ i - 2]. If this is set to true , we update the value of this position to true as well. Else, we keep
+the value as false. Then , we need to do an or between this value and the value present above this cell, if the character 
+previous to the * and the current character of the text are same. Finally we return the value at position string.length() and
+pattern.length().
