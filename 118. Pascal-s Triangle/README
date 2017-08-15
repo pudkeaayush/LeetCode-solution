@@ -1,0 +1,7 @@
+The idea here is to simply get the previous list and add 2 elements at a time. We also append 1 to the beginning
+and the end of the current list. Let us understand with an example : Suppose n = 5. Initially the first level has 
+1. Next the next level will have 1 , 1. For the 3rd level, we add 1 first to the list and then add the sum of previous
+list ( 1 + 1 == 2) to the list. At the end we append 1 to the list. Thus our this level contains [1 , 2 , 1]. Next for level 4, we initally add 1 to list.
+Next, we add 1 + 2 or 3 to the list. Then we add( 2 + 1 == 3) again to the list. At the end we add 1 to the list. Final list
+for level 4 is [ 1 , 3, 3 , 1]. Finally for level 5, we first add 1 . Then 1 + 3 == 4 is added to the list. Next we add 3 + 3 == 6 to the 
+list. Next, we add 3 + 1 == 4 to the list. At the end we add 1 to the list. Thus our final list looks like [ 1 , 4 , 6 , 4 , 1].
