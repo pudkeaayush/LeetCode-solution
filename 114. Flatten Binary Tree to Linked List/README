@@ -1,0 +1,12 @@
+The idea here is to use Post Order traversal. For instance suppose the tree given to us is :
+         1
+        / \
+       2   5
+      / \   \
+     3   4   6
+     
+The post order traversal of this tree would be 3 , 4 , 2 , 6 , 5 , 1. If we go to the right
+first instead of left our post order traversal becomes 6 , 5 , 4 , 3 , 2 , 1 which is our
+desired result. However, we need to make the left child of every node null and also make sure
+that the current node's right points to the previous node. Thus for instance, the right child of
+4 in our traversal should point to the previous element ( i .e 5).
