@@ -1,1 +1,7 @@
 The idea here is to use dynamic programming. Let us say we need to find the least no. of perfect squares that make up 13.
+We iterate from 1 to j *j where j * j is less than or equal to 13. In this case, it turns out to be 3.
+We use the below formula :
+dp[i] = Math.min( dp[ i ] , dp[ i - j * j ] + 1) where j goes from 1 to x where x * x is less than or equal to i.
+dp[13] can either be dp[13 - 1] or dp[12] + 1 , or it can be dp[13 - 4] + 1 , or it can be dp[ 13 - 9 ] + 1.
+Similarly, dp[12] , dp[9] and dp[4] can be calculated. We find that dp[9] = 1 and dp[4] = 1. Thus the minimum value
+we can get is 2.
