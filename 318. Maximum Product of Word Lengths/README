@@ -1,0 +1,9 @@
+The basic idea here is to store every character of the word in a particular position of the 32 bits possible in an integer.
+As there are only 26 characters that we need to account for, we can start off by putting the character 'a' in the 1st LSB,
+'b' in the 2nd LSB , 'c' in the 3rd LSB and so on. 
+Hence say we have two words, "abcd" and "def", to represent the word "abcd", we will set the 1st , 2nd , 3rd and 4th LSB position
+to 1 corresponding to a , b, c and d respectively. Thus our representation for the string "abcd" becomes 00000000000000000000000000001111.
+This in integer would be 15. Now for the string "def" we have to set the 4th most, 5th most and 6th bit from the end to 1. Thus
+our integer representation corresponding to this string becomes : 00000000000000000000000000111000. Now we do a logical AND between these 
+two and see if it is 0. If so we multiply their lengths else we conclude that they have repetitive characters. In this case as the 4th bit
+from the end is set for both the strings, we do not get 0 and thus the answer for these two strings is 0.
