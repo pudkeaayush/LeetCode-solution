@@ -1,0 +1,3 @@
+The idea here is to use a Binary Search as the version numbers are sorted. Lets take an example for n = 10.
+In this case, mid = 5. We check if 6th element is a badVersion or not. If it is, we just need to search from 0 to mid
+otherwise if it is not , we just need to search from 6th to 10. We do this till left < right.
