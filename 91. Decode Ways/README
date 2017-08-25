@@ -1,2 +1,7 @@
 The intuition here is to see that we need to check if the two digits are less than or equal to 26. If so , we need to set
 dp[ i ] = dp[ i + 1] + dp[ i + 2] else dp[ i ] = dp[ i + 1]. Note that we are starting from the end and go till 0.
+For instance say the string is 2526. Then we initialize an array of size 5. dp[4] = 1.
+Now we start iterating from the end of the array. As the last character is not 0, we set dp[3] as 1.
+Now we see 26 <= 26. Thus dp[2] = dp[ 3 ] + dp[ 4 ] = 2.
+Similarly, 52 is not <= 26. Thus dp[ 1 ] = dp[ 2 ] = 2.
+Agaiin, 25 is less than or equal to 26. Thus dp[ 0 ] = dp[ 1 ] + dp[ 2] = 4. Thus we return 4 as the answer.
