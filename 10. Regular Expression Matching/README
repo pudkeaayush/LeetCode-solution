@@ -1,4 +1,4 @@
-The idea here is to use dynamio programming. 
+The idea here is to use dynamic programming. 
 We have to take a matrix of size (m + 1) * (n + 1) where m is the length of the string and n is the length of the pattern.
 We need to iniatialize the 0th row and 0th column as True as a null string and null pattern are considering matching. 
 Now, everytime we encounter an * in the pattern, we check what the value of the matrix
