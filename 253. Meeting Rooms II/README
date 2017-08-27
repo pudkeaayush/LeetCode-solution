@@ -1,0 +1,4 @@
+The idea here is to first sort the intervals based on start values. Then everytime we add the end values
+of every interval to a min heap. While inserting, we check whether the start value of this interval is 
+greater than or equal to the peek element of the min heap. If so we remove the peek element from the priority
+queue. At the end we return the priority queue size as our answer.
