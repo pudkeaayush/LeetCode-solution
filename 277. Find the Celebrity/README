@@ -1,0 +1,5 @@
+The idea here is that we first make the first person as the possible celebrity( candidate ). Now we iterate from 
+1 to n and at each subsequent iteration if any of the i-th person does not know the candidate, we make the i-th
+person as the possible candidate. Now, we need to check if this candidate is the actual candidate. Else we return
+-1. To check if this candidate is the actual celebrity, we just need to make sure that all the other people know him
+and he does not know any of them.
