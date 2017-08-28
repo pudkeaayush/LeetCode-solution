@@ -1,0 +1,4 @@
+The idea here is to use a Min Heap to add the listnodes. We extract the minimum element from the min heap
+i.e the root and create a resultant list accordingly. If the next element in the list is not null, we 
+add it to our min heap. As there are total n * k elements and we might need to run heapify operation
+after each insertion which takes log k time, the total complexity is nklogk.
