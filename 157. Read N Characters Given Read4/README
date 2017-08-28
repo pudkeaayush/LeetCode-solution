@@ -4,4 +4,4 @@ after each read, need to copy to the buffer.
 For instance take buffer as "a" and n = 0.
 In this case the total read should be 0 and the string returned should be "".
 Also when buffer is "a" and n == 1, total read should be 1 and should return a.
-We always copy from Math.min( read , n - totalReadTillNow).
+We always copy 0 to  Math.min( currentRead , n - totalReadTillNow).
