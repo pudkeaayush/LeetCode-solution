@@ -12,3 +12,4 @@ would be serialized as follows : 1 2 3 X X 4 5 X X X X. We only push nodes( non 
 Now when we deserialize, 1 is made the root and 2 and 3 are the left and right child respectively. After this
 as the values are X and X we simply skip. Then 4 is made the left child of 3 and 5 as the right child. Then again
 all X are skipped. Here too, queue is used for deserializing.
+queue.poll() after each left and right check.
