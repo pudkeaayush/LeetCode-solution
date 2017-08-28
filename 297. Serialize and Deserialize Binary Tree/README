@@ -1,0 +1,14 @@
+The idea is to use a queue(BFS) to serialize and use "X" to denote null node and split node with a space.
+We use a StringBuilder to store the string and then deserialize based on the same intuition.
+Thus for instance the tree :
+    1
+   / \
+  2   3
+     / \
+    4   5
+    
+would be serialized as follows : 1 2 3 X X 4 5 X X X X. We only push nodes( non null) to the queue.
+
+Now when we deserialize, 1 is made the root and 2 and 3 are the left and right child respectively. After this
+as the values are X and X we simply skip. Then 4 is made the left child of 3 and 5 as the right child. Then again
+all X are skipped.
