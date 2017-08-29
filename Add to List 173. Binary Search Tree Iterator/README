@@ -1,4 +1,5 @@
 The idea here is to use a Stack data structure. We push the root and all the left most nodes
 into the stack first. Once this is done, we pop the element and we point to the right element
 of that popped element. If this popped element has any other left childs, add that to the stack
-as well in addition to the popped element.
+as well in addition to the popped element. Thus , for the hasNext function we simply need to check
+if the stack is not empty.
