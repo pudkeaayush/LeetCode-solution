@@ -9,5 +9,6 @@ Now we add ( i + j) where i is the index of 2nd string and j is the index of 1st
 Please note that these two digits can only affect the digits at position i + j which is the carry
 and i + j + 1 which is the remainder digits of the result. When we add the remainder part do 
 result[ remainder ] = sum % 10 whereas for carry resultant[ carry ] += sum.
+Also be careful that sum is the summation of result[ remainder ] + multiplication of the digits.
 
 At the end need to remove all trailing zeros and return answer.
