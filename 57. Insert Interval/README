@@ -1,0 +1,8 @@
+The idea here is that if the current interval's end value is less than the start value of the given
+interval, or the given interval is already added in the result, then we add the current interval to the
+result. Else if the current interval's start value is more than the given interval's end value, then we 
+add the given interval followed by the current interval to the result and set the added flag to true.
+The other criteria is for merging. In this case, the given Interval's start value is the 
+Math.min( givenInterval.start , current.start ) and given Interval's end value is Math.max(givenInterval.end ,
+current.end). At the end we check whether the given Interval is already added to the result or not.
+If not, we add it.
