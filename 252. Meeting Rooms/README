@@ -1,0 +1,2 @@
+The idea here is simply to sort based on the start value and check if the end value of the previous one is greater
+than the start value of the current one. If so we return false. At the end, we return true.
