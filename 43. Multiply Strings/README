@@ -1,0 +1,13 @@
+Let us understand through an example :
+122 * 38. Here we want to do multiplication as follows:
+Initialize an array of size len1 + len2 where len1 is the length of String1 and
+len2 is the length of String2. 
+Then our array would look like this :
+0   0   0   0   0
+
+Now we add ( i + j) where i is the index of 2nd string and j is the index of 1st string.
+Please note that these two digits can only affect the digits at position i + j which is the carry
+and i + j + 1 which is the remainder digits of the result. When we add the remainder part do 
+result[ remainder ] = sum % 10 whereas for carry resultant[ carry ] += sum.
+
+At the end need to remove all trailing zeros and return answer.
