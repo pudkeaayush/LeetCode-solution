@@ -1,0 +1,4 @@
+The idea is to first split the string based on "/". After this we skip if it is "." or "". If it is
+".." , then pop() the last element from the stack. Else the other strings, we push it onto the stack.
+At the end, for all the strings we append the strings to the end of the result. At the starting, we
+have to add "/". If the string is empty at the end, we return "/" else return the result.
