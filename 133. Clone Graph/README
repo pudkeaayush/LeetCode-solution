@@ -1,0 +1,14 @@
+/*Referenced from Geeksforgeeks */
+
+The idea is to do a BFS traversal of the graph and while visiting a node make a clone node of it (a copy of original node). 
+If a node is encountered which is already visited then it already has a clone node.
+
+How to keep track of the visited/cloned nodes?
+A HashMap/Map is required in order to maintain all the nodes which have already been created.
+Key stores: Reference/Address of original Node
+Value stores: Reference/Address of cloned Node
+
+A copy of all the graph nodes has been made, how to connect clone nodes?
+While visiting the neighboring vertices of a node u get the corresponding cloned node for u , let’s call that cloneNodeU , 
+now visit all the neighboring nodes for u and for each neighbor find the corresponding clone node(if not found create one) and 
+then push into the neighboring vector of cloneNodeU node.
