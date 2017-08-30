@@ -1,0 +1,17 @@
+The idea here is to note that we can divide the array into two parts : sum of positives
+and sum of negatives such that their difference is equal to S.
+Hence , positiveSum - negativeSum = target.
+Also , positiveSum - negativeSum + positiveSum + negativeSum = target + positiveSum + negativeSum
+which gives us : positiveSum = ( target + sum(array) ) / 2. Now we use the same approach that
+we used to find the partition array into two equal subset problem.
+Let us understand with an example : arr = [1, 1, 1, 1, 1] and S = 3.
+Here the sum of the array is 5, which gives 8 as the total sum. In our case, the positiveSum
+would be 4. We need to find the subset such that the positives add to 4.
+We initialize an array of size 5 and set dp[ 0 ] = 0.
+Now we start iterating from the end of sum till current element's value. 
+We get dp[1] = 1 after considering the first element of the array.
+Next, we get dp[2] = 1 and dp[1] = 2 after considering the second element of the array.
+Next, we get dp[3] = 1 and dp[2] = 3 and dp[1] = 3 after considering the third element.
+Next, we get dp[4] = 1 and dp[3] = 4 , dp[2] = 6 and dp[1] = 4 after considering the 4th element.
+Next, we get dp[4] = 5, dp[3] = 10 , dp[2] = 10 , dp[1] = 5 after considering the last element.
+Finally , we return dp[4] as our answer.
