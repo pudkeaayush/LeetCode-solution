@@ -1,0 +1,7 @@
+The idea here is to use dynamic programming. We know that the sum can be formed by either
+taking that element or not taking that element. Hence we use this property in our dynamic
+programming approach. Initially, we compute the sum of all elements in the array. If this 
+sum is odd, then it means that it cannot be partitioned into two equal subset array. If it
+is even, we will compute the sum/2 dp and return the value of this dp i.e dp[ sum / 2].
+
+Complexity : O( n * k) where n is the number of elements and k is the sum of all elements.
