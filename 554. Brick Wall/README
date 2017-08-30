@@ -1,0 +1,7 @@
+The idea here is that we will use a map to store the successive sum of the bricks in any row other
+than the last brick. If the sum is already present in the map, we increment the value of that sum key.
+At the end, we subtract the key values of all the keys from the total number of rows. Remember that
+the value corresponding to the key represents the number of rows having that sum i.e ending at that sum.
+We want to find the difference between no. of rows and the value to get our result. For instance if
+there are 4 rows out of 6, which have sum as 4, that means only two will cross the bricks if we draw a line
+at this particular point.
