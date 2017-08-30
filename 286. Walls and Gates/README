@@ -1,0 +1,3 @@
+The idea is to use DFS from the nodes marked 0. We can traverse 4 positions from every position,
+left , right , down and up. If at any point the distance from this 0 is lesser than another 0,
+we update the distance. At the end, return the updated matrix.
