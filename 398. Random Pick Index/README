@@ -1,0 +1,4 @@
+The idea is to use reservoir sampling. We iterate through the list to check if the target element
+equals to the current element. If it does, we increment the count and generate a random number between 
+0 and count using Math.random method. If this number is less than 1, we assign index as i else we
+do not change the value of index from -1.
