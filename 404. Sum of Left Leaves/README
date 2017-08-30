@@ -1,0 +1,5 @@
+We can either use inorder traversal for this problem or use BFS. For inorder traversal, we pass a flag true for
+left child and false for right child. Before adding the value of the root to our answer, we check if the left child 
+and right child of this root element are null and whether the flag is true or not.
+We can also use BFS and check if the node.left != null and node.left.left == null && node.left.right == null.
+If so we add node.left value to our sum.
