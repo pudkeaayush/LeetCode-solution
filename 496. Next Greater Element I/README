@@ -1,0 +1,10 @@
+The idea here is to use a stack to keep a decreasing subsequence of nums2. If top of the stack < nums2[i]
+at every iteration, pop the element from the stack and put (stack.pop(), nums[i]) into the map. At the end,
+we iterate nums1 array and if the element's value is present in the map, we return that value else we return -1.
+For instance take the example of nums1 = [ 4 , 1, 2 ] and nums2 = [1 , 3 , 4 , 2 ].
+Here we will first push 1 in the stack. Next as 3 is greater than 1, we pop 1 from the stack and put
+( 1 , 3) into the stack. At the end we push 3 to the stack. Now again as 3 < 4, we pop 3 from the stack
+and put ( 3 , 4) into the map.Now we push 4 into the stack. At the end as 2 is not greater than 4, we do not
+put it into the map and push 2 into the stack.
+After we are finished traversing all the elements of nums2, we iterate nums1 and check if the key value is in the map.
+If so we return the value of the key else return -1.
