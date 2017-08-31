@@ -1,0 +1,5 @@
+The main thing here is that, we can remove either 1 or 2 or 3 stones. Thus if a person has say 4 stones,
+we will always love irrespective of how many stones we remove. Similarly, if a person has 8 stones, he can 
+remove 1 or 2 or 3 after which 7 , 6 , 5 stones would be left respectively. As the other person can now again
+remove 3 , 2, 1 stone respectively, we will end up with 4. Thus a simple solution is to check whether
+n % 4 == 0 or not.
