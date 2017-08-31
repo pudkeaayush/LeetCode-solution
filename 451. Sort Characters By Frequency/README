@@ -1,0 +1,3 @@
+The idea is to use a map to store the frequencies of each character in the word. After this we create an array
+of size max + 1 where max is the maximum frequency of the characters. We then put the characters into this array.
+We then start iterating from the end of the array and if it is not null, print it that many times.
