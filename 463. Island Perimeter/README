@@ -1,0 +1,17 @@
+The idea is to iterate through the given 2d array and if any element is 1, we add 4 to it.
+After this, we find the left, right , bottom and top and check whether it is 1 and already visited.
+If so, we add -2 to the result. At the end we return the result as the answer.
+For instance take the example of : 
+[[0,1,0,0],
+ [1,1,1,0],
+ [0,1,0,0],
+ [1,1,0,0]]
+
+Here, we add 4 to the answer at position [0][1]. At position [1][0] , we again add 4.
+At position [1][1], we see that the top and left are already visited. Thus we add 4 initially and 
+then subtract 2 and 2 respectively. Thus, our result till this point is 8. Next for 1 at position
+[1][2], we add 4 and as the left is already visited, we subtract 2 from the result. Thus our 
+answer till this point is 10. Now for 1 at position [2][1], we add 4 and subtract 2 as top is already visited.
+Thus our answer is 12. Similarly we add 4, for 1 at position [3][0]. For 1 at position [3][1] we add 4 
+and then subtract 4( 2 from top and 2 from left). Thus it is like adding 0.
+Finally we return 16 as the answer.
