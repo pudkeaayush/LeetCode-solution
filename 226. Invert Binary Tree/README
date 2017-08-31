@@ -1,0 +1,2 @@
+The idea is to use recursion here. We swap the left subtree with the right subtree and recursively
+call inverTree method for the left and right childs. At the end we return root as our answer.
