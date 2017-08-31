@@ -1,0 +1,6 @@
+The idea is that, we keep counting the number of ones till we visit a 0. At this point, we reset
+the count value to 0 and start recounting again if we see a 1. We maintain a max that we can use 
+to store the maximum count.
+For instance say the array is : [ 1 , 1, 0 , 1, 1 , 1]. In this case, the initially we see 2 consecutive
+ones and update max value to 2. After this, we see a 0 and change count to 0. Then count becomes 3
+at the end of the array and the max gets updated as well. We return 3 as our answer.
