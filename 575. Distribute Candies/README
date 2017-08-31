@@ -1,0 +1,4 @@
+The idea is to put all the candies in the set and then return the minimum value of set.size() and
+arr.length / 2. For instance, lets take the example of the array : [1,1,2,3]. In this case, 
+our set will contain elements 1 , 2 and 3 and hence a size of 3. We return the minimum value of
+3 and 2 which is 2 in our case as our answer.
