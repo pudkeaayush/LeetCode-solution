@@ -1,0 +1,4 @@
+The idea is to use a hashmap to store the elements and the frequency of the elements as the value.
+After this, in the second interation if value of k is not equal to 0 then we simply find ones with 
+value more than or equal to 2 and return those elements' count. Else , we check if (element key - k)
+is present in the map. If so we increment the count and return count at the end.
