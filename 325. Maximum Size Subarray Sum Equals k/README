@@ -1,0 +1,24 @@
+The main idea here is that : sum - diff = target. Thus we calculate the sum and the difference at each iteration.
+Sum is the cumulative sum till that point. difference is the difference between the sum and the target at any point.
+If this difference is already present in the map, it means that this is equal to the target and hence we subtract
+the current index and the value we obtain from the map corresponding to the difference.
+Let us understand through an example :
+arr = [-2, -1, 2, 1] and k = 1.
+Here our cumulative sum is [ - 2 , -3 , -1 , 0].
+At each point we compute the cumulative sum and the difference.
+Sum       Diff
+--------------------
+-2        -3
+-3        -4
+-1        -2
+0         -1
+
+At each point we put( sum , index into our hashmap). Thus the map looks like:
+(-2,0)
+(-3,1)
+(-1,2)
+(0,3).
+We see that the difference -2 is already present in the map when we reach the third element. At this point, it means we
+have found the target and thus max is updated as (2 - 0 ) == 2.
+Similarly, targeet is also found at index 3 where -1 is already present. Max at this position is ( 3 - 2). However, 1 is not
+greater than the previous max, and thus we return 2 as our answer.
