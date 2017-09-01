@@ -1,0 +1,2 @@
+The idea is to sort based on the y values and then compare the current start to previous end. If the end is more,
+we increment the count. At the end return the count.
