@@ -1,0 +1,9 @@
+Let us understand through an example.
+[[10,16], [2,8], [1,6], [7,12]]
+If this is the given array, we first sort based on the y value. After sorting, our interval array
+would look as below:
+[[1,6], [2,8],[7,12],[10,16]]
+First we start by checking whether intervals from the 2nd position and beyond are between 6 i.e end
+element of 1st interval. As 2,8 is we continue by incrementing the value of count. Next we see, [7,12] 
+does not fall between 6 and thus we set end value now to 12. Now we check if 10,16 is between this .
+As it is, we increment count from 1 to 2. Finally we return 2 as our answer.
