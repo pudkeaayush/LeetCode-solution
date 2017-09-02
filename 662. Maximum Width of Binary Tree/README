@@ -1,4 +1,4 @@
-The idea here is to node that the left child of every binary tree is at index 2 * i + 1 whereas
+The idea here is to note that the left child of every binary tree is at index 2 * i + 1 whereas
 the right child is at the index 2 * i + 2. Thus we just need to keep a track of this to find out
 the width of any tree.
 For instance say the tree under consideration is :
