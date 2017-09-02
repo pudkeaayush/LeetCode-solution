@@ -1,0 +1,15 @@
+Let us understand through an example : [4, 14, 2].
+4 - 0100
+14 - 1110
+2 - 0010
+As seen from the binary representation of the above integers, we just need to take the 32 bit
+representation of each digit and then get the number of set bits for each position. 
+For instance , number of set bits in LSB of above integers is 0. Thus it contributes 0 to the 
+hamming total.
+Then, number of set bits in the 2nd bit from left is 2. Thus it contributes ,  2 * ( n - 2) or 2 to the 
+total hamming distance.
+Similarly, the number of set bits in the 3rd bit from left is 2. Thus it contributes 2 - ( n * 2) or 2 to
+the hamming distance.
+Again, for the MSB, the total number of 1s is 1. Thus it contributes 1 * ( n - 1) or 2 to the total hamming
+distances.
+Hence our answer is 2 + 2 + 2 or 6.
