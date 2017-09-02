@@ -1,0 +1,3 @@
+Use XOR to find the different bits in the two numbers.
+Count the no. of set bits using n = n & 1 while n is not 0 and incrementing 
+count at every iteration.
