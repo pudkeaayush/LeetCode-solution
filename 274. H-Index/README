@@ -8,7 +8,7 @@ At first iteration, we increment count to 1. At 2nd iteration we increment count
 At third iteration we increment count to 3. Now at the 4th iteration as count is greater than 
 1, we break and return 3 as our answer.
 
-The O(n) solution is as follows :
+The O(n) solution is as follows using the concept of Bucket sort :
 We create a temporary array of size len + 1 where len is the length of our array.
 If the value of array element is less than or equal to len, then we increment the count of that 
 index in our temporary array else increment count of arr[len].
