@@ -1,0 +1,9 @@
+Let us try understanding with the array : [1,1,1,2,2,3].
+Here we keep an index called j that is used to store the elements in the proper position.
+The first two elements are put as it is in the array. We start iterating from the 3rd position.
+j thus holds a value of 2. At this position we check if this element i.e 1 in our case is equal 
+to arr[j - 2]. As it is we continue. Now we see that 2 is not equal to arr[j-2] i.e 1. We thus copy 
+2 to position 2 and increment the value of j to 3. We now check whether 2 is equal to arr[j-2] or arr[1].
+As it is not we copy 2 to arr[3] and increment the value of j to 4. At this point we compare and check 
+that 3 is not equal to arr[j-2] i.e 2. Thus we store 3 in this position 4 and increment j to 5.
+We return 5 as our answer.
