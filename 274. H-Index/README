@@ -1,0 +1,19 @@
+This question can be done in either O(nlogn) or O(n) time.
+O(nlogn) solution is by sorting the array and then iterating from the end of the array.
+At any point, if the value of count which is incremented after every iteration is greater than the
+index value, we return that index as the h value. For instance, take the array : [3, 0, 6, 1, 5].
+After sorting the array is : [ 0 , 1 , 3 , 5 , 6].
+We start iterating from the end of the array and count is initalized to 0.
+At first iteration, we increment count to 1. At 2nd iteration we increment count to 2.
+At third iteration we increment count to 3. Now at the 4th iteration as count is greater than 
+1, we break and return 3 as our answer.
+
+The O(n) solution is as follows :
+We create a temporary array of size len + 1 where len is the length of our array.
+If the value of array element is less than or equal to len, then we increment the count of that 
+index in our temporary array else increment count of arr[len].
+Now we just start iterating from the end of the array. If at any point, count of arr[i] + count >= i, we return
+that value. Note that count contains the cumulative sum.
+For instance in the array : [ 0 , 1 , 3 , 5 , 6].
+We initialize an array of size 6.[ 0 , 1 , 0, 1, , 0  , 2] would be our array considering the values.
+Now at index 5, 2 is not greater than 5. Thus we continue. At index 3, 2 + 1 >= 3. Thus we return 3 as our value.
