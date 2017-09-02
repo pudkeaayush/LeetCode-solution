@@ -1,0 +1,2 @@
+The simple technique here is to use BFS to find all the nodes in that level and sum them up and
+divide by the number of nodes in that level.
