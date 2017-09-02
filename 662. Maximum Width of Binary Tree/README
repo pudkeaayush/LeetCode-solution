@@ -1,0 +1,17 @@
+The idea here is to node that the left child of every binary tree is at index 2 * i + 1 whereas
+the right child is at the index 2 * i + 2. Thus we just need to keep a track of this to find out
+the width of any tree.
+For instance say the tree under consideration is :
+          1
+         / \
+        3   2
+       /     \  
+      5       9 
+     /         \
+    6           7
+   
+Thus the element 1 is at index 0 , then its left child would be at index (2 * 0 + 1) or 1 and the right
+child would be at index ( 2 * 0 + 2) or 2. Now we just need to find the difference at each level between the
+leftmost and rightmost child of that level. Hence when we consider the size of the queue and iterate from
+i = 0 to len where len = queue.size(), we update left when i == 0 and right when i == len - 1.
+At the end, we take the difference between these two and add 1 to find out the width of that level.
