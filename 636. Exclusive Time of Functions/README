@@ -1,0 +1,22 @@
+The idea here is to use a stack. Everytime it is a start, we add it to a stack and everytime it 
+is an end, we pop from the stack. If the stack is not empty, we add currentTimeStamp - previousTimeStamp
+value to the top of the stack's element. Also while popping i.e during end, we increment the value of
+res[stack.pop()] and increment the previousTimeStamp by 1.
+Let us understand with an example :
+n = 2
+logs = 
+["0:start:0",
+ "1:start:2",
+ "1:end:5",
+ "0:end:6"]
+ 
+ Here we initialize an array of size 2. The first index corresponds to log 0 and 2nd to log 1.
+ Initally, we see the stack is empty and thus set previousTimeStamp = 0 and from 1st log
+ and add 0 to the stack.
+ Next, we add 2 - 0 to the 0th index of result corresponding to log 0.
+ Now, we set previousTimeStamp to 2 and add 1 to the stack.
+ Now for the 3rd entry in the logs list, we add 5 - 2 to the res[1]. 
+ Also as it is an end, we pop and increment the count by 1 for res[1] and increment previousTimeStamp
+ previousTimeStamp from 5 to 6.
+ Next we add ( 6 - 6 ) to the res[0]. Also as it is end, we pop from stack, increment res[0] by 1 to 3
+ and then finally increment previousTimeStamp to 7.
