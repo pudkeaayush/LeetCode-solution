@@ -1,0 +1,3 @@
+The idea here is to note that if the value of the root is less than the left value, we can completely ignore
+the left tree. Similarly if the value of the root is more than the right value, we can completely ignore the
+right tree. Using these two simple observations we can call our code recursively.
