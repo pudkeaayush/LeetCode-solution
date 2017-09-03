@@ -1,0 +1,15 @@
+The idea is to compute the running sum and take the modulus of running sum % k. We put this mod value 
+as the key and the index i as the value to a map. If at any point the mod value is already present in
+the map, it means the subarray contains a multiple of k.
+For instance lets take the example of : [23, 2, 4, 6, 7] and k = 6.
+Here we first put( 5 , 0 ) into our map as 23 % 6 == 5.
+Next we put( 1 , 1 ) into the map as 25 % 6 == 1.
+Next we get 29 % 6 having a mod value 5 which is already present in the map.
+Also, we check if i = 2 - map.get(5) is greater than or equal to 2. If so we return true.
+In our case as the condition holds true, we return true.
+
+Let us take another example : [23, 2, 6, 4, 7] and k = 6.
+Here we first put( 5 , 0) into our map.
+Next we put( 1 , 1) into our map.
+Then we find that 31 % 6 == 1 is already present in the map. However as , 2 - 1 is not greater than 1, we continue.
+Next we find 35 % 6 is already present in the map. Now as , 3 - 0 is greater than 2, we return true.
