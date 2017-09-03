@@ -1,0 +1,13 @@
+The idea is to keep a count of the index of the integer value corresponding to each character of the number.
+For instance for the number : 2736, we will maintain an array(map) of 10 elements from 0 to 9.
+Now arr[2] = 0 , arr[7] = 1 , arr[ 3 ] = 2 and arr[6 ] = 3.
+Now we start iterating from the first character of the number.
+For every character we start iterating from 9 to value of that digit + 1. For 2 , we iterate from 9 to 3.
+If at any point, the map value of 9 is more than i, we swap the two characters and return the new Integer.
+For instance, in this case, 7 is the first value whose map value is 1 and more than 0. Thus we swap 7 and 2 and
+return the new Integer ( 7236) as our asnwer.
+
+Let us take another example of 9973. Then arr[9] = 1 , arr[7] = 2 , arr[3] = 3.
+Now we start iterating from the start . For 9 , there is no digit that is greater so we skip.
+For 7, we find that 9 is greater but it's map value is 1 which is lesser than 2. Thus we cannot swap.
+Similarly for 3, we find that neither 9 nor 7 have map values more than 3 and thus we cannot swap.
