@@ -1,0 +1,5 @@
+Let us consider the array : [1,2,3,4].
+Multiplication before the number :              [ 1 , 1 , 2 , 6]
+Multiplication before the number from reverse : [ 24 , 12, 4 , 1]
+                                              ----------------------
+                                               [24 , 12 , 8 , 6 ]
