@@ -1,0 +1,10 @@
+The idea is to sort every word and put in a hasmap < String , ArrayList >. In this way, all the similar words will be 
+put in the same key. 
+For instance : ["eat", "tea", "tan", "ate", "nat", "bat"] for this array,
+sorting eat will make it aet and we put it in a map of aet. 
+Similarly, sorting tea will give aet and we put it in the same key. 
+Sorting tan will give, ant and we put in this key.
+Sorting ate will give aet and we put in the key aet.
+Sorting nat will give ant and we put in this key. Thus key ant now contains tan and nat.
+Similarly, sorting bat gives abt.
+Thus our final answer would be ["eat","ate","tea"] in one group, ["tan" ,"nat"] in another group and ["bat"] alone.
