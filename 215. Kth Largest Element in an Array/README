@@ -6,3 +6,5 @@ pivot is visited. At the end we swap the pivot in the left variable so that it c
 original position in the sorted array. If this element is equal to nums.length - k, then
 we return this element as this is the kth largest element. Else if left is greater than
 nums.length - k, we traverse left else traverse right.
+
+Time Complexity : O(n) in average and best case, O(n*n) in worst case
