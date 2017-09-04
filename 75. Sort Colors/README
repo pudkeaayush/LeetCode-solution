@@ -2,3 +2,14 @@ The idea here is to maintain two indexes, one for 0 and one for 2. The index of 
 When we traverse the array, everytime we encounter a 2 we put it at the end of the array and decrement the index for insertion of 2 next time.
 Everytime we encounter a 0, we swap it in the front part of the array and increment the index for insertion of 1.
 Everytime we encounter a 1, we just increment the value of i. We iterate till i < length of the array. 
+For instance, take the example of the array : [ 2 , 1 , 0 , 0 , 1, 2, 2].
+Here fist we start by keeping the index for 2 as 6 and that for 0 as 0.
+We start iterating from the first element of the array.
+As it is a 2, we swap 2 with the element at position 6 and decrement the index for 2 to 5.
+Next again as we see the element is 2, we swap the the element at index 5 and decrement the index for 2 as 4.
+Next once again, we get a 2 and push it to the 4th index and decrement the value of index for 2 to 3.
+Now we see the element at index 0 is 1 and hence we just skip.
+Again element at index 1 is 1 and we skip.
+Next, element at index 2 in 0 and thus we swap with the first index for 0 and increment the value of index for 0.
+Now, again we swap 0 to the 1st position and increment the index for 0 to 2.
+Now, when we encounter 2 as we see that the index for 2 is greater than i, we don't swap.
