@@ -17,3 +17,6 @@ Then we call lowestCommonAncestor function with root.right i.e 2. Now we call th
 from the left and right of both 7's children. Then we call the right of 2 and return null from left and right of both children of 4.
 
 At this time as the left and right of the root are not same i.e 6 and 2 respectively, we return 5.
+
+Time Complexity : O(n)
+Space Complexity : O(h) for the call stack.
