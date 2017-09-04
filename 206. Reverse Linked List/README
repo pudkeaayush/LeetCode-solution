@@ -1,0 +1,3 @@
+The idea is to do an inplace reverse. For instance if the linked list is 1 --> 2 --> 3 -- > null.
+We initialize prev as null and curr as 1. Now, we iterate till curr != null.
+We make next of 1 point to null and curr points to 2. Similarly we do for other nodes.
