@@ -43,3 +43,5 @@ Finally, we pop 8 from the queue and because max changes to 0, we push [ 24 , 0]
 
 Thus our answer finally becomes :
 [2,10],[3,15],[7,12],[12,0],[15,10],[20,8],[24,0].
+
+Note that taking negative, takes care of all corner cases.
