@@ -1,5 +1,5 @@
 Let us understand through an example : [ [2 9 10], [3 7 15], [5 12 12], [15 20 10], [19 24 8] ].
-Initially we push the start value and negative height and the end value and height height to a list.
+Initially we push the start value and negative height and the end value and height to a list.
 Thus our list will look like :
 [2,-10]
 [9,10]
