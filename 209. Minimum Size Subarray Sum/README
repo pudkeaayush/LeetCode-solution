@@ -1,0 +1,3 @@
+The idea here it to use a sliding window concept.
+[2,3,1,2,4,3] and s = 7
+Keep a consecutive sum till we reach sum >= 7 and then try to reduce the window.
