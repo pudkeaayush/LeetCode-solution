@@ -12,3 +12,4 @@ result[ remainder ] = sum % 10 whereas for carry resultant[ carry ] += sum.
 Also be careful that sum is the summation of result[ remainder ] + multiplication of the digits.
 
 At the end need to remove all trailing zeros and return answer.
+
