@@ -1,0 +1,3 @@
+The idea here is to simply use two variables, one and two and keep storing numbers that are less
+than it into them. If at any point we are unable to do that, it means we have found a third variable
+and hence return true.
