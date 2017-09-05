@@ -1,0 +1,4 @@
+The idea here it to randomly generate a short url by considering characters from a-z,A-Z and 0-9 and
+generating a 6 character url. These 62 characters in total have a very small probability of collision.
+For instance , if there are 2500 URLs the probability of collision is 2500 / ( 62 ^ 6). If we have more
+URLs we can instead increase from 6 to 7.
