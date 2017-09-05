@@ -1,0 +1,18 @@
+The idea is to change 0 to -1 and then take the cumulative sum and put it into the map. If anytime we see the same
+sum repeat again, it means the number is balanced and hence we comupte max again.
+For instance : if the array is [ 0 , 1 , 1 , 1, 0 , 0, 0 , 1, 1 ].
+We change the array to [ - 1 , 1 , 1, 1, -1 , -1 , -1 , 1, ,1].
+Our cumulative sum is as shown : [ -1 , 0 , 1, ,2 , 1 , 0 , -1 , 0 , 1].
+We take a map and initialize 0 as -1.
+Now we start iterating from the sum. If at any time, we see the sum is repeated again, we compute the difference
+between the previous value of the key and subtract the current position. Repeated sum means that it is even.
+
+For instance in our example we put( - 1 , 0) into our map.
+Next, for the 2nd element as our sum is 0, we get max = 1 - (-1) == 2.
+Now the sum 1 is not present in map and hence we insert it into the map. We get ( 1 , 2 ) into the map.
+We then put ( 2 , 3) into the map.
+Next we get sum as 1 again which means ( 4 - 2 ) is the length of equal number of 0s and 1s. Max is not updated.
+Now, sum is 0 and we subtract 5 - (-1) and get 6 as the max score.
+Now , getting -1 means we get ( 6 - (0) ) or 6 as our max score.
+Now, getting 0 means we get ( 7 - (-1)) or 8 as our max score.
+Again 1 is repeated meaning, length == 8 - 2 which is not greater than 6.
