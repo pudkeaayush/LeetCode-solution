@@ -1,0 +1,3 @@
+The idea is to note that every palindrome is made up of at most 1 odd number of character which occurs in the middle if present.
+All the rest are even. Using this concept take a int[] array corresponding to 256 characters and increment their count. Now check if
+any of their count is odd. If so check for another character whose count is odd. If true return false else return true.
