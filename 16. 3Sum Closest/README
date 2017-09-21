@@ -1,0 +1,3 @@
+The idea is to first sort the array and then compute the sum of this current element with the left and right
+indexed elements where left = i + 1 and right = nums.length - 1. Now if this sum is more than the target,
+we decremenet right else increment left. Keep track of the least sum.
