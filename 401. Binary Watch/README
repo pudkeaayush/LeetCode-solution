@@ -1,3 +1,3 @@
-The idea is to represent the minutes by the last 6 bits and the hours by the bits before those 6 bits. Then we
-count the number of 1s in this representation. If it is equal to num we add this hour and minutes combination
-to the result. We iterate through all the possible hours and minutes.
+The idea is to represent the minutes by the last 6 bits and the hours by the bits before those 6 bits. 
+Then we count the number of 1s in this representation. If it is equal to num we add this hour and 
+minutes combination to the result. We iterate through all the possible hours and minutes.
