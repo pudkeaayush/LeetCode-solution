@@ -1,0 +1,5 @@
+The simple idea here is that we keep comparing every word character with every character of the abbreviation. If they are equal
+we increment the index of both and continue. Else, if they are different, we need to make sure that they are not less than or equal to '0'
+or more than '9'. In that case, we can return false. Otherwise, it means they are numbers and we keep appending till we see digits 0 -9.
+After that we increment the count of word by this integer.
+At the end we have to see if i == word.length() && j = abbr.length() where i and j are the index for word and abbr respectively.
