@@ -1,0 +1,4 @@
+The idea here is to take the abbreviation as the key and the words are added in the form of a list to the key. If a key is already
+present then the given word is added to the list of that key. While checking if the word is unique, we first generate the abbreviation.
+After this we check if this abbreviation is a key in the map. If not we return true. If it is, we check to see if the given word has been
+seen previously by traversing the arraylist of this key. We need to take a set to avoid duplicate cases.
