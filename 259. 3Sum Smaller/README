@@ -1,2 +1,2 @@
 The logic here is to sort the array and use two pointer approach. Everytime, we find the sum to be lesser than the target
-of these three elements, we add right - left to the count and increment left pointer. Else we increment the right pointer.
+of these three elements, we add right - left to the count and increment left pointer. Else we decrement the right pointer.
