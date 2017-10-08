@@ -1,0 +1,6 @@
+If k == 0 or n == 0 ,then there are 0 ways.
+If n = 1, then there are k ways.
+If n = 2, then either it can be same color which can be done in k ways or different colors( k * (k - 1) ) ways.
+If n = 3, then if it is same color as previous then, same = k * ( k - 1).
+If different colors then suppose the previous were same, then same * ( k - 1) + diff * ( k - 1).
+Similarly we can do for the rest.
