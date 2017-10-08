@@ -1,0 +1,9 @@
+The idea here it to use a sliding window. Let us understand with an example string : "eceba" and k = 2.
+We initialize an arr of size 256 to keep a count of each character. When we encounter the first 'e', we increment
+the count of 'e' in the array to 1. Next, when we encounter c, we again increment the count of 'c' to 1.
+At this time we have seen 2 distinct characters and the count of distinct characters is 2. Next, when we see another 'e'
+we increment the count of 'e' to 2. However, the count of distinct characters is still 2. Next when we encouter the character
+'b' we increment the count of 'b'. At this time we have seen 3 distinct characters and its count is greater than k. In this case,
+we keep decrementing the count of each character from the left. Initially left is initialized to 0. We decrement the count of 'e'
+from 2 to 1. As it is still greater than 0, we decrement the count of c from 1 to 0. At this point as it is 0, we break and continue
+the above process.
