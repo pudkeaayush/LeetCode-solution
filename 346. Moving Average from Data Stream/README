@@ -1,0 +1,2 @@
+The idea is to take an auxiliary array called arr and keep adding elements to it. Once it reaches the size of the given window,
+replace the 0 index with the new element and so on.
