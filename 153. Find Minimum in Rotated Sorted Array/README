@@ -1,0 +1,8 @@
+The idea is to use binary search.
+Let us understand through an example.
+Suppose the rotated array is : [ 6 , 7 , 1 , 2, 3, 4, 5]
+Here we see that, mid value is 2. As 2 is not greater than 6, and also start value 6 is not smaller than the end value
+5, we make end to mid i.e 2. Now our array under consideration is [ 6 , 7 , 1 , 2].
+As nums[start] = 6 is not equal to nums[end] that is 2, we do not return. Now mid is 7. As nums[mid] is greater than
+nums[start] , we make start point to 1. Thus now our array is [ 1 , 2].
+Now as nums[start] < nums[end] we return 1.
