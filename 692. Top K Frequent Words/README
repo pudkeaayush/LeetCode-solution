@@ -1,0 +1,3 @@
+The idea is to use a hashmap to keep a count of the frequency and then push the key,value pair to a priority queue.
+The priority queue is initialized such that it keeps elements in decreasing order of count from higher to lower.
+Complexity is O(nlogk) where k is the height of the priority queue. 
