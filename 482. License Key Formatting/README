@@ -1,3 +1,3 @@
 The idea here it to iterate from the end of the string. Till we reach the count of k, we keep appending characters to
-a StringBuilder. After that, we append a "-" and rest the value of count to 0. At the end reverse the string, remove
+a StringBuilder. After that, we append a "-" and reset the value of count to 0. At the end reverse the string, remove
 all the leading "-" and return.
