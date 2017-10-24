@@ -1,0 +1,2 @@
+The idea is to store all the subtree sums in a map. Then the last sum that we have , should be even and 
+the map should contain sum/2.
